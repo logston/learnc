@@ -1,0 +1,39 @@
+(For the first assignment, the instructions are very specific.) 
+Write four files: 
+	- deque.c
+	- deque.h
+	- Makefile
+	- deque_test.c 
+
+deque.c and deque.h implement a deque which can push and pop elements
+from either end. deque_test.c contains a tester programme for the deque 
+data structure that takes arguments from the command line. 
+The Makefile contains instructions for building everything. 
+The deque type may be written using a linked-list or a contiguous 
+memory block ("array.") It does not need to be generic on the type of 
+its contents. It will be easier to write it as a homogeneous collection 
+specified on a single type (in this example, strings.) The programme must 
+explicitly free all memory that it allocates. The deque type must be built 
+into an object file in its own compilation pass. 
+
+You can use clang or  gcc (though I encourage using gcc so that you can 
+use gdb.) You can use `--std=gnu11` or `--std=c11`. 
+You can use `CFLAGS=-g -g3 -ggdb` to facilitate debugging. 
+The Makefile should have phony targets `all`, `clean`, and `test`.
+
+The tester programme takes arguments of the following form
+(note that command arguments may be surrounded by exraneous
+whitespace & may need string stripping):
+	- "< apple" push apple on to the right of the deque
+	- "orange >" push orange on the left of the deque
+	- "<" pop an element off of the left of the deque
+	- ">" pop an element off of hte right of the deque
+
+"=" "a" "b" "c" the previous sequence of operations results in
+these expected results (which are checked—if actual results do not
+match expected results, exit with a failure code)
+
+e.g.,
+./deque_test "< apple" "< orange" "< pineapple" ">" ">" ">" = pineapple orange apple
+./deque_test "watermelon >" "< kiwi" "pear >" "< peach" ">" ">" "<" "<" = peach kiwi pear watermelon
+
