@@ -24,8 +24,9 @@ The repo includes the following files
 	- README (this file)
 
 TODO
-▷⋅⋅⋅⋅⋅⋅⋅- Read data
-▷⋅⋅⋅⋅⋅⋅⋅- Store data in adjacency list
-▷⋅⋅⋅⋅⋅⋅⋅- Makefile
-▷⋅⋅⋅⋅⋅⋅⋅- algorithm for determining shortest distance between A & B
-▷⋅⋅⋅⋅⋅⋅⋅- output functions
+	- Read CLI args (./agent input.dat [fare|route] DEPARTURE ARRIVAL) (DONE)
+▷⋅⋅⋅- Read data (DONE)
+▷⋅⋅ - Store data in adjacency list
+▷⋅⋅⋅- Makefile
+▷⋅⋅⋅- algorithm for determining shortest distance between A & B
+▷⋅⋅⋅- output functions
