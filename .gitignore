@@ -8,4 +8,5 @@ __pycache__
 # Exercises
 02-agent/input.dat
 02-agent/agent
+02-agent/agent.dSYM/
 

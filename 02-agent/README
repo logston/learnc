@@ -26,7 +26,11 @@ The repo includes the following files
 TODO
 	- Read CLI args (./agent input.dat [fare|route] DEPARTURE ARRIVAL) (DONE)
 ▷⋅⋅⋅- Read data (DONE)
-▷⋅⋅ - Store data in adjacency list
-▷⋅⋅⋅- Makefile
-▷⋅⋅⋅- algorithm for determining shortest distance between A & B
+▷⋅⋅ - Store data in adjacency list (DONE)
+▷⋅⋅⋅- Makefile (DONE)
+▷⋅⋅⋅- algorithm for determining cheapest fare between A & B
+         - Is it possible? 
+         - Print possibilities
+         - Choose cheapest
 ▷⋅⋅⋅- output functions
+

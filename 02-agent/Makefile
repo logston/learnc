@@ -1,4 +1,5 @@
 SHELL = bash
+CFLAGS=-ggdb
 
 .PHONY: all clean test
 
